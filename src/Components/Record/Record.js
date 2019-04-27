@@ -65,7 +65,7 @@ class Record extends Component {
         bgColor: '#8B72FF',
         title: 'Hyaluronic acid',
         price: 149,
-        icon: { name: 'spinner' },
+        icon: { name: 'heartbeat' },
         place: 'North Syfland',
         time: '10am - 06pm'
       }
@@ -111,9 +111,9 @@ class Record extends Component {
             ))}
           </View>
         </MainCard>
-        <View>
-          {productsInformation.map(product => (
-            <HorizontalCard cardInformation={product} />
+        <View style={{ marginBottom: 20 }}>
+          {productsInformation.map((product, i) => (
+            <HorizontalCard key={i} cardInformation={product} />
           ))}
         </View>
       </View>
