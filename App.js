@@ -6,6 +6,7 @@ import Record from './src/Components/Record/Record';
 import ProductContent from './src/Components/ProductContent/ProductContent';
 import Analysis from './src/Components/Analysis/Analysis';
 import User from './src/Components/User/User';
+import Products from './src/Components/Products/Products';
 
 const theme = {
   Icon: {
@@ -37,7 +38,8 @@ export default class App extends Component {
           {/* <ProductContent /> */}
           {/* <Project /> */}
           {/* <Record /> */}
-          <User />
+          <Products />
+          {/* <User /> */}
         </ScrollView>
       </ThemeProvider>
     );
