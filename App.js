@@ -5,6 +5,7 @@ import Project from './src/Components/Project/Project';
 import Record from './src/Components/Record/Record';
 import ProductContent from './src/Components/ProductContent/ProductContent';
 import Analysis from './src/Components/Analysis/Analysis';
+import User from './src/Components/User/User';
 
 const theme = {
   Icon: {
@@ -32,10 +33,11 @@ export default class App extends Component {
           scrollEnabled={scrollEnabled}
           onContentSizeChange={this.onContentSizeChange}
         >
-          <Analysis />
+          {/* <Analysis /> */}
           {/* <ProductContent /> */}
           {/* <Project /> */}
           {/* <Record /> */}
+          <User />
         </ScrollView>
       </ThemeProvider>
     );

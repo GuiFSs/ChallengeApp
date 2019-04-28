@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Dimensions } from 'react-native';
-import {
-  Text,
-  Icon,
-  Card,
-  Rating,
-  AirbnbRating,
-  Button
-} from 'react-native-elements';
+import { Text, Icon, Card, Rating, Button } from 'react-native-elements';
 import MHeader from '../MHeader/MHeader';
 
 const { width, height } = Dimensions.get('window');

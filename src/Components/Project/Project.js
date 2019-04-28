@@ -62,11 +62,15 @@ class Project extends Component {
                   containerStyle={{ marginLeft: 15 }}
                   iconStyle={{ textAlign: 'right' }}
                   name='trending-up'
-                  color='#09EC82'
+                  color={styles.greenColor.color}
                   type='material'
                 />
                 <Text
-                  style={{ color: '#09EC82', fontSize: 18, marginLeft: 10 }}
+                  style={{
+                    color: styles.greenColor.color,
+                    fontSize: 18,
+                    marginLeft: 10
+                  }}
                 >
                   1.57
                 </Text>
@@ -133,7 +137,8 @@ const styles = StyleSheet.create({
   smallGreyText: { fontSize: 14, color: '#ccc' },
   purpleColor: { color: '#7782FF' },
   downNumber: { color: '#6A7FFF' },
-  view: { height: '50%', backgroundColor: '#6B7DFF' }
+  view: { height: '50%', backgroundColor: '#6B7DFF' },
+  greenColor: { color: '#80E1B1' }
 });
 
 export default Project;
