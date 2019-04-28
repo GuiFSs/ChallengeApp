@@ -10,7 +10,7 @@ const RightComponent = ({ iconConfig }) => {
         containerStyle={styles.icon}
         name={iconConfig.name}
         type={iconConfig.type || 'font-awesome'}
-        color='#F2F4FF'
+        color={iconConfig.color || '#F2F4FF'}
       />
     </View>
   );
@@ -19,9 +19,10 @@ const RightComponent = ({ iconConfig }) => {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    paddingTop: 35
+    paddingTop: 35,
+    paddingRight: 10
   },
-  icon: { top: -14 }
+  icon: { top: -7 }
 });
 
 export default RightComponent;

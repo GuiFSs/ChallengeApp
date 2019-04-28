@@ -4,11 +4,9 @@ import { ThemeProvider } from 'react-native-elements';
 import Project from './src/Components/Project/Project';
 import Record from './src/Components/Record/Record';
 import ProductContent from './src/Components/ProductContent/ProductContent';
+import Analysis from './src/Components/Analysis/Analysis';
 
 const theme = {
-  Header: {
-    backgroundColor: '#7782FF'
-  },
   Icon: {
     type: 'font-awesome'
   }
@@ -34,7 +32,8 @@ export default class App extends Component {
           scrollEnabled={scrollEnabled}
           onContentSizeChange={this.onContentSizeChange}
         >
-          <ProductContent />
+          <Analysis />
+          {/* <ProductContent /> */}
           {/* <Project /> */}
           {/* <Record /> */}
         </ScrollView>

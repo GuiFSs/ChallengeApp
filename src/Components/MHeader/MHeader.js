@@ -8,24 +8,27 @@ const MHeader = ({
   textConfig,
   leftIconConfig,
   rightIconConfig,
-  headerConfig
+  headerConfig,
+  headerBgColor
 }) => {
   return (
     <View style={{ position: 'absolute', width: '100%' }}>
       <Header
+        backgroundColor={headerBgColor || '#7782FF'}
         leftComponent={
           <LeftComponent textConfig={textConfig} iconConfig={leftIconConfig} />
         }
         rightComponent={<RightComponent iconConfig={rightIconConfig} />}
       />
-      <View
-        style={{
-          ...styles.view,
-          ...headerConfig
-        }}
-      >
-        {console.log(headerConfig)}
-      </View>
+
+      {headerConfig && (
+        <View
+          style={{
+            ...styles.view,
+            ...headerConfig
+          }}
+        />
+      )}
     </View>
   );
 };

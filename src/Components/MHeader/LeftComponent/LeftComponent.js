@@ -7,34 +7,36 @@ const LeftComponent = ({ textConfig, iconConfig }) => {
   switch (textConfig.h) {
     case 'h1':
       text = (
-        <Text style={styles.text} h1>
+        <Text style={textConfig.color || styles.text} h1>
           {textConfig.text}
         </Text>
       );
       break;
     case 'h2':
       text = (
-        <Text style={styles.text} h2>
+        <Text style={textConfig.color || styles.text} h2>
           {textConfig.text}
         </Text>
       );
       break;
     case 'h3':
       text = (
-        <Text style={styles.text} h3>
+        <Text style={textConfig.color || styles.text} h3>
           {textConfig.text}
         </Text>
       );
       break;
     case 'h4':
       text = (
-        <Text style={styles.text} h4>
+        <Text style={textConfig.color || styles.text} h4>
           {textConfig.text}
         </Text>
       );
       break;
     default:
-      text = <Text style={styles.text}>{textConfig.text}</Text>;
+      text = (
+        <Text style={textConfig.color || styles.text}>{textConfig.text}</Text>
+      );
   }
   let component = <View>{text}</View>;
 
