@@ -3,6 +3,7 @@ import { ScrollView, Dimensions } from 'react-native';
 import { ThemeProvider } from 'react-native-elements';
 import Project from './src/Components/Project/Project';
 import Record from './src/Components/Record/Record';
+import ProductContent from './src/Components/ProductContent/ProductContent';
 
 const theme = {
   Header: {
@@ -33,8 +34,9 @@ export default class App extends Component {
           scrollEnabled={scrollEnabled}
           onContentSizeChange={this.onContentSizeChange}
         >
+          <ProductContent />
           {/* <Project /> */}
-          <Record />
+          {/* <Record /> */}
         </ScrollView>
       </ThemeProvider>
     );

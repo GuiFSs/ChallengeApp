@@ -37,7 +37,7 @@ class Project extends Component {
           leftIconConfig={leftIconConfig}
           headerConfig={headerConfig}
         />
-        <MainCard container={{ marginTop: '12%' }} title='Outfit Ideas'>
+        <MainCard container={{ marginTop: '25%' }} title='Outfit Ideas'>
           <View>
             <LineChart
               style={{ height: 200 }}
@@ -74,7 +74,7 @@ class Project extends Component {
             </View>
           </View>
         </MainCard>
-        <Card containerStyle={{ marginTop: '30%', marginBottom: 20 }}>
+        <Card containerStyle={{ marginBottom: 20 }}>
           <View>
             <Avatar
               rounded
@@ -99,12 +99,12 @@ class Project extends Component {
             <Text style={{ ...styles.purpleColor }} h4>
               Steps in Installing
             </Text>
-            <Text style={{ fontSize: 14, color: '#ccc', marginBottom: 10 }}>
+            <Text style={{ ...styles.smallGreyText, marginBottom: 10 }}>
               02 Jun 2017
             </Text>
             {[0.65, 0.73, 0.47].map((val, i) => (
               <View key={i}>
-                <Text>Lorem ipsum</Text>
+                <Text style={styles.smallGreyText}>Lorem ipsum</Text>
 
                 <View style={{ flexDirection: 'row' }}>
                   <Progress.Bar
@@ -130,6 +130,7 @@ class Project extends Component {
 }
 
 const styles = StyleSheet.create({
+  smallGreyText: { fontSize: 14, color: '#ccc' },
   purpleColor: { color: '#7782FF' },
   downNumber: { color: '#6A7FFF' },
   view: { height: '50%', backgroundColor: '#6B7DFF' }

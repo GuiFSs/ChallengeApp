@@ -9,7 +9,7 @@ const RightComponent = ({ iconConfig }) => {
         size={iconConfig.size}
         containerStyle={styles.icon}
         name={iconConfig.name}
-        type='font-awesome'
+        type={iconConfig.type || 'font-awesome'}
         color='#F2F4FF'
       />
     </View>

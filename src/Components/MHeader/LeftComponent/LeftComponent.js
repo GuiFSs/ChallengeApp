@@ -41,13 +41,15 @@ const LeftComponent = ({ textConfig, iconConfig }) => {
   if (iconConfig) {
     if (iconConfig.side === 'left') {
       component = (
-        <View>
+        <View style={{ flexDirection: 'row' }}>
           <Icon
+            // iconStyle={styles.icon}
             name={iconConfig.name}
-            containerStyle={styles.icon}
             color='#F2F4FF'
-          />{' '}
-          {text}
+          />
+          <Text style={{ color: '#fff', top: -10, marginLeft: '10%' }} h4>
+            {textConfig.text}
+          </Text>
         </View>
       );
     } else {
@@ -56,7 +58,6 @@ const LeftComponent = ({ textConfig, iconConfig }) => {
           {text}
           <Icon
             iconStyle={styles.icon}
-            // containerStyle={styles.icon}
             name={iconConfig.name}
             color='#F2F4FF'
           />
