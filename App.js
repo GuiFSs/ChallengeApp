@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { ScrollView, Dimensions, View } from 'react-native';
+import { Dimensions, View } from 'react-native';
 import { ThemeProvider, Text } from 'react-native-elements';
-import AppContainer from './src/Components/Navigator/Navigator';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
-import Products from './src/Components/Products/Products';
 import Navigator from './src/Components/Navigator/Navigator';
-import ProductContent from './src/Components/ProductContent/ProductContent';
 
 const { width, height } = Dimensions.get('window');
 
@@ -24,10 +20,9 @@ export default class App extends Component {
   };
 
   render() {
-    const scrollEnabled = this.state.screenHeight > height;
     return (
       <ThemeProvider theme={theme}>
-        <View style={{ flex: 1, top: '-9%' }}>
+        <View style={{ flex: 1, marginTop: '-14%' }}>
           <Navigator />
         </View>
       </ThemeProvider>

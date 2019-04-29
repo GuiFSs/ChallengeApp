@@ -83,7 +83,7 @@ class Project extends Component {
               </View>
             </View>
           </MainCard>
-          <Card containerStyle={{ marginBottom: 20 }}>
+          <Card containerStyle={{ marginBottom: 20, borderRadius: 10 }}>
             <View>
               <Avatar
                 rounded
@@ -140,6 +140,7 @@ class Project extends Component {
 }
 
 const styles = StyleSheet.create({
+  container: { marginBottom: 25 },
   smallGreyText: { fontSize: 14, color: '#ccc' },
   purpleColor: { color: '#7782FF' },
   downNumber: { color: '#6A7FFF' },

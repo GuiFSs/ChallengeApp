@@ -83,7 +83,10 @@ class ProductContent extends Component {
                 {product.rating}
               </Text>
               <Rating
-                style={{ marginLeft: 20, marginTop: 5 }}
+                style={{
+                  marginLeft: 20,
+                  marginTop: 5
+                }}
                 type='custom'
                 ratingBackgroundColor='#ccc'
                 ratingCount={5}
@@ -159,7 +162,13 @@ class ProductContent extends Component {
               {Object.keys(product.daily).map(
                 key =>
                   key !== 'contextualAd' && (
-                    <View key={key} style={{ marginRight: '25%' }}>
+                    <View
+                      key={key}
+                      style={{
+                        flex: 1,
+                        justifyContent: 'space-between'
+                      }}
+                    >
                       <Text style={styles.greyText}>{key}</Text>
                       <Text h4 style={styles.purpleColor}>
                         {product.daily[key]}
@@ -190,7 +199,7 @@ class ProductContent extends Component {
                       1.79
                     </Text>
                   </View>
-                  <View>
+                  <View style={{ marginRight: '15%' }}>
                     <Text>extent</Text>
                     <Text style={styles.purpleColor} h4>
                       0.12583
@@ -242,7 +251,8 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: 'rgba(255,255,255, .9)',
     borderRadius: 10,
-    padding: 25
+    padding: 25,
+    marginBottom: 25
   },
   icon: {
     borderRadius: 20,

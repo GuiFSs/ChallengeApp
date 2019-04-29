@@ -125,12 +125,13 @@ class Products extends Component {
                 style={{
                   paddingLeft: 0,
                   backgroundColor: '#8B94FF',
-                  borderRadius: 60
+                  borderRadius: 60,
+                  width: '92%'
                 }}
               >
                 <FlatList
+                  scrollEnabled={false}
                   horizontal={true}
-                  style={{ flex: 1 }}
                   data={this.state.tabItens}
                   renderItem={({ item, index }) => (
                     <View
@@ -240,8 +241,8 @@ const styles = StyleSheet.create({
   normalTab: {
     fontSize: 16,
     color: '#fff',
-    marginLeft: 25,
-    marginRight: 25,
+    marginLeft: 20,
+    marginRight: 20,
     paddingTop: 20
   },
   whiteColor: { color: '#fff' }

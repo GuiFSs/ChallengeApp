@@ -93,10 +93,8 @@ export default class Analysis extends Component {
           {/* bar  */}
           <View
             style={{
-              backgroundColor: '#F7F5F8',
               padding: 30,
-              paddingLeft: 5,
-              width: width
+              paddingLeft: 5
             }}
           >
             <Progress.Bar

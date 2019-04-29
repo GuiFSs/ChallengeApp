@@ -131,7 +131,6 @@ export default class User extends Component {
                 style={{
                   flexDirection: 'row',
                   marginLeft: 'auto',
-                  marginRight: '10%',
                   marginTop: 10
                 }}
               >
