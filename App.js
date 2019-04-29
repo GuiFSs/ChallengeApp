@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
-import { ScrollView, Dimensions } from 'react-native';
-import { ThemeProvider } from 'react-native-elements';
-import Project from './src/Components/Project/Project';
-import Record from './src/Components/Record/Record';
-import ProductContent from './src/Components/ProductContent/ProductContent';
-import Analysis from './src/Components/Analysis/Analysis';
-import User from './src/Components/User/User';
+import { ScrollView, Dimensions, View } from 'react-native';
+import { ThemeProvider, Text } from 'react-native-elements';
+import AppContainer from './src/Components/Navigator/Navigator';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 import Products from './src/Components/Products/Products';
+import Navigator from './src/Components/Navigator/Navigator';
+import ProductContent from './src/Components/ProductContent/ProductContent';
+
+const { width, height } = Dimensions.get('window');
 
 const theme = {
   Icon: {
     type: 'font-awesome'
   }
 };
-
-const { width, height } = Dimensions.get('window');
-
 export default class App extends Component {
   state = {
     screenHeight: 0
@@ -29,18 +27,9 @@ export default class App extends Component {
     const scrollEnabled = this.state.screenHeight > height;
     return (
       <ThemeProvider theme={theme}>
-        <ScrollView
-          style={{ flex: 1 }}
-          scrollEnabled={scrollEnabled}
-          onContentSizeChange={this.onContentSizeChange}
-        >
-          {/* <Analysis /> */}
-          {/* <ProductContent /> */}
-          {/* <Project /> */}
-          {/* <Record /> */}
-          <Products />
-          {/* <User /> */}
-        </ScrollView>
+        <View style={{ flex: 1, top: '-9%' }}>
+          <Navigator />
+        </View>
       </ThemeProvider>
     );
   }

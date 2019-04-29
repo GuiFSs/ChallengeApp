@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Dimensions, StyleSheet } from 'react-native';
+import { View, Dimensions, StyleSheet, ScrollView } from 'react-native';
 import MHeader from '../MHeader/MHeader';
 import MainCard from '../MainCard/MainCard';
 import { Text } from 'react-native-elements';
@@ -72,51 +72,53 @@ class Record extends Component {
     ];
 
     return (
-      <View>
-        <MHeader
-          textConfig={textConfig}
-          rightIconConfig={rightIconConfig}
-          leftIconConfig={leftIconConfig}
-          headerConfig={headerConfig}
-        />
-        <MainCard container={{ marginTop: '25%' }} title='Shot Views'>
-          <View
-            style={{
-              flexDirection: 'row',
-              alignItems: 'flex-start',
-              flexWrap: 'wrap'
-            }}
-          >
-            {cardContent.map((content, i) => (
-              <View
-                key={i}
-                style={{
-                  flexDirection: 'column',
-                  marginRight: i !== 2 ? '15%' : 0,
-                  flex: 1
-                }}
-              >
-                <AreaChart
-                  style={{ height: 80, width: 70 }}
-                  data={data}
-                  contentInset={{ top: 30, bottom: 30 }}
-                  curve={shape.curveNatural}
-                  svg={{ fill: content.color }}
-                />
-                <View style={{ alignItems: 'center' }}>
-                  <Text>{content.txt}</Text>
-                  <Text h4>{content.numb}</Text>
+      <ScrollView>
+        <View>
+          <MHeader
+            textConfig={textConfig}
+            rightIconConfig={rightIconConfig}
+            leftIconConfig={leftIconConfig}
+            headerConfig={headerConfig}
+          />
+          <MainCard container={{ marginTop: '25%' }} title='Shot Views'>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'flex-start',
+                flexWrap: 'wrap'
+              }}
+            >
+              {cardContent.map((content, i) => (
+                <View
+                  key={i}
+                  style={{
+                    flexDirection: 'column',
+                    marginRight: i !== 2 ? '15%' : 0,
+                    flex: 1
+                  }}
+                >
+                  <AreaChart
+                    style={{ height: 80, width: 70 }}
+                    data={data}
+                    contentInset={{ top: 30, bottom: 30 }}
+                    curve={shape.curveNatural}
+                    svg={{ fill: content.color }}
+                  />
+                  <View style={{ alignItems: 'center' }}>
+                    <Text>{content.txt}</Text>
+                    <Text h4>{content.numb}</Text>
+                  </View>
                 </View>
-              </View>
+              ))}
+            </View>
+          </MainCard>
+          <View style={{ marginBottom: 20 }}>
+            {productsInformation.map((product, i) => (
+              <HorizontalCard key={i} cardInformation={product} />
             ))}
           </View>
-        </MainCard>
-        <View style={{ marginBottom: 20 }}>
-          {productsInformation.map((product, i) => (
-            <HorizontalCard key={i} cardInformation={product} />
-          ))}
         </View>
-      </View>
+      </ScrollView>
     );
   }
 }
