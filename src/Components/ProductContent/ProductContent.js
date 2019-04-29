@@ -193,13 +193,13 @@ class ProductContent extends Component {
                     marginTop: 20
                   }}
                 >
-                  <View style={{ marginRight: '35%' }}>
+                  <View style={{ marginRight: '20%' }}>
                     <Text>raise</Text>
                     <Text style={styles.purpleColor} h4>
                       1.79
                     </Text>
                   </View>
-                  <View style={{ marginRight: '15%' }}>
+                  <View style={{ marginRight: '10%' }}>
                     <Text>extent</Text>
                     <Text style={styles.purpleColor} h4>
                       0.12583
@@ -245,6 +245,7 @@ class ProductContent extends Component {
 }
 
 const styles = StyleSheet.create({
+  container: { marginBottom: 25 },
   greyText: { color: '#9B9B9B' },
   darkerGrey: { color: '#686868' },
   tabsText: { fontSize: 20 },

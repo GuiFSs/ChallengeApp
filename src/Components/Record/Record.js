@@ -73,7 +73,7 @@ class Record extends Component {
 
     return (
       <ScrollView>
-        <View>
+        <View style={{ marginBottom: 25 }}>
           <MHeader
             textConfig={textConfig}
             rightIconConfig={rightIconConfig}

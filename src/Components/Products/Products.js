@@ -104,7 +104,7 @@ class Products extends Component {
 
     return (
       <ScrollView>
-        <View>
+        <View style={{ marginBottom: 25 }}>
           <MHeader
             textConfig={textConfig}
             rightIconConfig={rightIconConfig}
@@ -130,7 +130,6 @@ class Products extends Component {
                 }}
               >
                 <FlatList
-                  scrollEnabled={false}
                   horizontal={true}
                   data={this.state.tabItens}
                   renderItem={({ item, index }) => (

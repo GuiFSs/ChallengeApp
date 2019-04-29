@@ -22,7 +22,7 @@ export default class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <View style={{ flex: 1, marginTop: '-14%' }}>
+        <View style={{ flex: 1, marginTop: '-16%' }}>
           <Navigator />
         </View>
       </ThemeProvider>
