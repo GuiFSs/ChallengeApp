@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Dimensions, ScrollView } from 'react-native';
 import { LineChart } from 'react-native-svg-charts';
-import { Text, Icon, Card, Avatar, ThemeProvider } from 'react-native-elements';
+import { Text, Icon, Card, Avatar } from 'react-native-elements';
 import * as shape from 'd3-shape';
 import MHeader from '../MHeader/MHeader';
 import MainCard from '../MainCard/MainCard';
@@ -140,7 +140,7 @@ class Project extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: { marginBottom: 25 },
+  container: { marginBottom: 35 },
   smallGreyText: { fontSize: 14, color: '#ccc' },
   purpleColor: { color: '#7782FF' },
   downNumber: { color: '#6A7FFF' },

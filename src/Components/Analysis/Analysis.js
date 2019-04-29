@@ -45,7 +45,7 @@ export default class Analysis extends Component {
 
     return (
       <ScrollView>
-        <View style={{ padding: 20, marginBottom: 25 }}>
+        <View style={{ padding: 20, marginBottom: 35 }}>
           <MHeader
             headerBgColor={headerBgColor}
             textConfig={textConfig}

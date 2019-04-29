@@ -4,7 +4,7 @@ import MHeader from '../MHeader/MHeader';
 import MainCard from '../MainCard/MainCard';
 import { Text } from 'react-native-elements';
 
-import { AreaChart, Grid } from 'react-native-svg-charts';
+import { AreaChart } from 'react-native-svg-charts';
 import * as shape from 'd3-shape';
 import HorizontalCard from '../HorizontalCard/HorizontalCard';
 

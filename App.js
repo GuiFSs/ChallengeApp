@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Dimensions, View } from 'react-native';
-import { ThemeProvider, Text } from 'react-native-elements';
+import { View } from 'react-native';
+import { ThemeProvider } from 'react-native-elements';
 import Navigator from './src/Components/Navigator/Navigator';
-
-const { width, height } = Dimensions.get('window');
 
 const theme = {
   Icon: {

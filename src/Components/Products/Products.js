@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
-import {
-  View,
-  FlatList,
-  Dimensions,
-  StyleSheet,
-  ScrollView
-} from 'react-native';
-import { Card, Avatar, Button, Text, Icon } from 'react-native-elements';
+import { View, FlatList, StyleSheet, ScrollView } from 'react-native';
+import { Text, Icon } from 'react-native-elements';
 import MHeader from '../MHeader/MHeader';
 import VerticalCard from '../VerticalCard/VerticalCard';
-import WithScroll from '../common/WithScroll';
-const { width, height } = Dimensions.get('window');
 
 class Products extends Component {
   state = {
@@ -125,8 +117,7 @@ class Products extends Component {
                 style={{
                   paddingLeft: 0,
                   backgroundColor: '#8B94FF',
-                  borderRadius: 60,
-                  width: '92%'
+                  borderRadius: 60
                 }}
               >
                 <FlatList
@@ -177,7 +168,7 @@ class Products extends Component {
               <View style={{ height: 100 }} />
             </View>
             {/* ^^^^ end of purple bg  */}
-            <View style={{ top: '-10%' }}>
+            <View style={{ top: '-10%', marginBottom: 15 }}>
               <FlatList
                 horizontal={true}
                 style={{ flex: 1 }}

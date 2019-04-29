@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { View, Dimensions, StyleSheet, ScrollView } from 'react-native';
 import MHeader from '../MHeader/MHeader';
 import { Card, Avatar, Button, Text, Icon } from 'react-native-elements';
-import { LineChart, BarChart, XAxis } from 'react-native-svg-charts';
-
-import * as shape from 'd3-shape';
+import { BarChart, XAxis } from 'react-native-svg-charts';
 
 const { width, height } = Dimensions.get('window');
 
