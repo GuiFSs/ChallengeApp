@@ -1,11 +1,11 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import Analysis from '../Analysis/Analysis';
-import ProductContent from '../ProductContent/ProductContent';
-import User from '../User/User';
-import Record from '../Record/Record';
-import Products from '../Products/Products';
-import Project from '../Project/Project';
-import HomeScreen from '../HomeScreen/HomeScreen';
+import Analysis from '../screens/Analysis/Analysis';
+import ProductContent from '../screens/ProductContent/ProductContent';
+import User from '../screens/User/User';
+import Record from '../screens/Record/Record';
+import Products from '../screens/Products/Products';
+import Project from '../screens/Project/Project';
+import HomeScreen from '../screens/HomeScreen/HomeScreen';
 
 const AppNavigator = createStackNavigator(
   {

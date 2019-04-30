@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Dimensions, StyleSheet, ScrollView } from 'react-native';
-import MHeader from '../MHeader/MHeader';
+import MHeader from '../../MHeader/MHeader';
 import { Card, Avatar, Button, Text, Icon } from 'react-native-elements';
 import { BarChart, XAxis } from 'react-native-svg-charts';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Dimensions, ScrollView } from 'react-native';
-import MHeader from '../MHeader/MHeader';
+import MHeader from '../../MHeader/MHeader';
 import { Card, Text, Icon } from 'react-native-elements';
 
 import * as Progress from 'react-native-progress';

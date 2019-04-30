@@ -1,7 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
 import { Button, Text } from 'react-native-elements';
-import { ScrollView } from 'react-native-gesture-handler';
 
 const HomeScreen = props => {
   const screens = [

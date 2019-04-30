@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { View, Dimensions, StyleSheet, ScrollView } from 'react-native';
-import MHeader from '../MHeader/MHeader';
-import MainCard from '../MainCard/MainCard';
+import MHeader from '../../MHeader/MHeader';
+import MainCard from '../../MainCard/MainCard';
 import { Text } from 'react-native-elements';
 
 import { AreaChart } from 'react-native-svg-charts';
 import * as shape from 'd3-shape';
-import HorizontalCard from '../HorizontalCard/HorizontalCard';
+import HorizontalCard from '../../HorizontalCard/HorizontalCard';
 
 const { width, height } = Dimensions.get('window');
 

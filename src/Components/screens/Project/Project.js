@@ -3,8 +3,8 @@ import { View, StyleSheet, Dimensions, ScrollView } from 'react-native';
 import { LineChart } from 'react-native-svg-charts';
 import { Text, Icon, Card, Avatar } from 'react-native-elements';
 import * as shape from 'd3-shape';
-import MHeader from '../MHeader/MHeader';
-import MainCard from '../MainCard/MainCard';
+import MHeader from '../../MHeader/MHeader';
+import MainCard from '../../MainCard/MainCard';
 import * as Progress from 'react-native-progress';
 
 const { width, height } = Dimensions.get('window');

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { View, FlatList, StyleSheet, ScrollView } from 'react-native';
 import { Text, Icon } from 'react-native-elements';
-import MHeader from '../MHeader/MHeader';
-import VerticalCard from '../VerticalCard/VerticalCard';
+import MHeader from '../../MHeader/MHeader';
+import VerticalCard from '../../VerticalCard/VerticalCard';
 
 class Products extends Component {
   state = {
